@@ -15,8 +15,7 @@ const validate = (e) => {
     const category = select('#category').value
 
     if(!title || !content || !thumbnail || category === '0') {
-        e.preventDefault()
-        alert('Please fill all fields')
+        displayMessage('red','Please fill all fields')
     }
 }
 
