@@ -1,3 +1,1 @@
-const select =(selector)={
-
-}
+const select = (selector) => document.querySelector(selector)
