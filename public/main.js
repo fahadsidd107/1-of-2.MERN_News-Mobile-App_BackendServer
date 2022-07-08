@@ -3,8 +3,10 @@ const select = (selector) => document.querySelector(selector)
 const form = select('.form')
 const message = select('.message')
 
-const displayMessage = (message) => {
+const displayMessage = (color,text) => {
  message.style.visibility = 'visible'
+ message.style.backgroundColor = color
+ message.style.test = text
 }
 const validate = (e) => {
     const title = select('#title').value
