@@ -1,4 +1,4 @@
-# ECommerce Website
+# News App
 
 Welcome to my React and Node Website Code to build a fully-functional e-commerce website. Clone this repo to build an e-commerce website using MERN stack (MongoDB, ExpressJS, React and Node.JS).
 
@@ -33,23 +33,23 @@ $ git clone https://github.com/fahadsidd107/1-of-3.MERN_E-Commerce_Frontend.git
 - Local MongoDB
   - Install it from [here](https://www.mongodb.com/try/download/community)
   - Create .env file in root folder
-  - Set MONGODB_URL=mongodb://localhost/amazona  
+  - Set MONB_URL=mongodb://localhost/amazona  
 - Atlas Cloud MongoDB
   - Create database at [https://cloud.mongodb.com](https://cloud.mongodb.com)
   - Create .env file in root folder
-  - Set MONGODB_URL=mongodb+srv://your-db-connection
+  
 
 ### 3. Run Backend
 
 ```
 $ npm install
 $ npm start
-```
 
-### 4. Admin Login
 
-- Run http://localhost:3000/signin
-- Enter admin email and password and click signin
+
+
+
+
 
 ## Support
 
