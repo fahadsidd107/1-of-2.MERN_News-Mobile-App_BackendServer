@@ -6,7 +6,7 @@ const message = select('.message')
 const displayMessage = (color,text) => {
  message.style.visibility = 'visible'
  message.style.backgroundColor = color
- message.style.test = text
+ message.innerText = text
 }
 const validate = (e) => {
     const title = select('#title').value
@@ -15,11 +15,12 @@ const validate = (e) => {
     const category = select('#category').value
 
     if(!title || !content || !thumbnail || category === '0') {
-        displayMessage('red','Please fill all fields')
+       return displayMessage('red','Please fill all fields')
     }
 }
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log('form is submit')
+    validate()
 })
