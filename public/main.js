@@ -1,3 +1,8 @@
 const select = (selector) => document.querySelector(selector)
 
-console.log(select)
+const form = select('.form')
+
+form.eventListener('submit', (e) => {
+    e.preventDefault()
+    console.log('form is submit')
+})
