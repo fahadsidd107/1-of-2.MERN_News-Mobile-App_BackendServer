@@ -7,12 +7,16 @@ const displayMessage = (color,text) => {
  message.style.visibility = 'visible'
  message.style.backgroundColor = color
  message.innerText = text
+ setTimeout(() => {
+    message.style.visibility = 'hidden'
+ }, 5000)
 }
 const validate = (e) => {
     const title = select('#title').value
     const content = select('#content').value
     const thumbnail = select('#thumbnail').value
     const category = select('#category').value
+
 
     if(!title || !content || !thumbnail || category === '0') {
        return displayMessage('red','Please fill all fields')
