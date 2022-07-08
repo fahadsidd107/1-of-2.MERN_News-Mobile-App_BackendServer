@@ -1,6 +1,6 @@
 # News App
 
-Welcome to my React and Node Website Code to build a fully-functional e-commerce website. Clone this repo to build an e-commerce website using MERN stack (MongoDB, ExpressJS, React and Node.JS).
+Welcome to my React Native and Node Hybrid App Code to build a fully-functional News App. Clone this repo to build an e-commerce website using MERN stack (MongoDB, ExpressJS, React and Node.JS).
 
 # You Will Learn
 
