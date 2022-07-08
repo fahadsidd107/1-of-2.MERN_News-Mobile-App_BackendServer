@@ -4,10 +4,15 @@ const form = select('.form')
 
 
 const validate = (e) => {
-    const title = select('#title')
-    const content = select('#content')
-    const thumbnail = select('#thumbnail')
-    const title = select('#title')
+    const title = select('#title').value
+    const content = select('#content').value
+    const thumbnail = select('#thumbnail').value
+    const category = select('#category').value
+
+    if(!title || !content || !thumbnail || category === '0') {
+        e.preventDefault()
+        alert('Please fill all fields')
+    }
 }
 
 form.addEventListener('submit', (e) => {
