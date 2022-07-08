@@ -1,8 +1,11 @@
 const select = (selector) => document.querySelector(selector)
 
 const form = select('.form')
+const message = select('.message')
 
-
+const displayMessage = (message) => {
+ message.style.visibility = 'visible'
+}
 const validate = (e) => {
     const title = select('#title').value
     const content = select('#content').value
