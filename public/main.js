@@ -9,7 +9,7 @@ const displayMessage = (color,text) => {
  message.innerText = text
  setTimeout(() => {
     message.style.visibility = 'hidden'
- }, 5000)
+ }, 3000)
 }
 const validate = (e) => {
     const title = select('#title').value
