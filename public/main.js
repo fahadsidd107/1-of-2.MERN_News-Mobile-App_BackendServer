@@ -22,7 +22,8 @@ const validate = (e) => {
        return displayMessage('red','Please fill all fields')
     }
 
-const extension = thumbnail.split('.')
+const extension = thumbnail.split('.').pop()
+console.log(extension)
 }
 
 form.addEventListener('submit', (e) => {
