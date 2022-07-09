@@ -14,8 +14,8 @@ const displayMessage = (color,text) => {
 const validate = (e) => {
     const title = select('#title').value.trim()
     const content = select('#content').trim()
-    const thumbnail = select('#thumbnail').value.trim()
-    const category = select('#category').value.trim()
+    const thumbnail = select('#thumbnail').value
+    const category = select('#category').value
 
 const accepted = ['png','jpeg','jpg','PNG','JPEG','JPG']
 
