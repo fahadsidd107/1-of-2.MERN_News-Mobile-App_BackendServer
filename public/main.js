@@ -26,6 +26,9 @@ const accepted = ['png','jpeg','jpg']
 const extension = thumbnail.split('.').pop()
 if(!accepted.includes(extension)) {
     return displayMessage('red','Please upload an png,jpg or jpeg image')
+}else{
+    displayMessage('green','Post created successfully')
+    form.reset()
 }
 
 
