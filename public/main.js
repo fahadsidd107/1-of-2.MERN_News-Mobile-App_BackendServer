@@ -35,5 +35,6 @@ if(!accepted.includes(extension)) {
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log('form is submit')
-    validate()
+    const valid = validate()
+    if(valid) {}
 })
