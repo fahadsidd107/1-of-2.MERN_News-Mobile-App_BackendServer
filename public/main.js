@@ -22,7 +22,7 @@ const validate = (e) => {
        return displayMessage('red','Please fill all fields')
     }
 
-console.log(thumbnail)
+const extension = thumbnail.split('.')
 }
 
 form.addEventListener('submit', (e) => {
