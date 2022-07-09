@@ -21,6 +21,8 @@ const validate = (e) => {
     if(!title || !content || !thumbnail || category === '0') {
        return displayMessage('red','Please fill all fields')
     }
+
+console.log(thumbnail)
 }
 
 form.addEventListener('submit', (e) => {
