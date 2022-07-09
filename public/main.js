@@ -17,7 +17,7 @@ const validate = (e) => {
     const thumbnail = select('#thumbnail').value
     const category = select('#category').value
 
-const accepted = ['png','jpeg','jpg']
+const accepted = ['png','jpeg','jpg','PNG','JPEG','JPG']
 
     if(!title || !content || !thumbnail || category === '0') {
        return displayMessage('red','Please fill all fields')
