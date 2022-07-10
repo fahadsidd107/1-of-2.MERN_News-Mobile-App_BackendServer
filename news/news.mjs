@@ -1,5 +1,7 @@
 import fs from 'fs'
 
 class News{
-    constructor(news){}
+    constructor(filename){
+        this.filename = filename
+    }
 }
