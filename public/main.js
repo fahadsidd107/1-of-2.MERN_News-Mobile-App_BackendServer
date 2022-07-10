@@ -36,5 +36,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log('form is submit')
     const valid = validate()
-    if(valid) {}
+    if(valid) {
+        
+    }
 })
