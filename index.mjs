@@ -1,5 +1,5 @@
 import express from 'express'
-import News from './news.mjs'
+import News from './news/news.mjs'
 const app= express()
 const PORT = 7777
 
