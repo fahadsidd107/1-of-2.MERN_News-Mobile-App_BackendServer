@@ -6,6 +6,7 @@ class News{
         try{
             fs.accessSync(this.filename)
         }catch(err){
+            fs.writeFileSync(this.filename, 'This is from news class')
         }
        
             
