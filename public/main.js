@@ -13,7 +13,7 @@ const displayMessage = (color,text) => {
 }
 const validate = (e) => {
     const title = select('#title').value.trim()
-    const content = select('#content').trim()
+    const content = select('#content').value.trim()
     const thumbnail = select('#thumbnail').value
     const category = select('#category').value
 
