@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-class News{
+ class News{
     constructor(filename){
         this.filename = filename
         try{
@@ -13,4 +13,4 @@ class News{
     }
 }
 
-module.exports = News
+export default News
