@@ -4,9 +4,9 @@ import fs from 'fs'
     constructor(filename = 'news.json'){
         this.path = `./data/${filename}`
         try{
-            fs.accessSync(this.filename)
+            fs.accessSync(this.path)
         }catch(err){
-            fs.writeFileSync(this.filename, 'This is from news class')
+            fs.writeFileSync(this.path, 'This is from news class')
         }
        
             
