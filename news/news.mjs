@@ -1,7 +1,7 @@
 import fs from 'fs'
 
  class News{
-    constructor(filename){
+    constructor(filename = 'news.json'){
         this.filename = filename
         try{
             fs.accessSync(this.filename)
