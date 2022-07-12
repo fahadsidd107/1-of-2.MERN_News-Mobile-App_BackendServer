@@ -3,6 +3,8 @@ import fs from 'fs'
  class News{
     constructor(filename = 'news.json'){
         this.path = `./data/${filename}`
+
+        try{}catch(){}
         try{
             fs.accessSync(this.path)
         }catch(err){
