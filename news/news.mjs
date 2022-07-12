@@ -4,7 +4,7 @@ import fs from 'fs'
     constructor(filename = 'news.json'){
         this.path = `./data/${filename}`
 
-        try{}catch(){}
+        try{}catch(err){}
         try{
             fs.accessSync(this.path)
         }catch(err){
