@@ -5,9 +5,9 @@ import fs from 'fs'
         this.path = `./data/${filename}`
 
         try{
-fs.readdirSync('')
+fs.readdirSync('data')
         }catch(err){
-
+fs.mkdirSync('data')
         }
         
         try{
