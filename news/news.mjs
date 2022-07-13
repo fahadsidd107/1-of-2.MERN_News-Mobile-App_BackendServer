@@ -13,7 +13,7 @@ fs.mkdirSync('data')
         try{
             fs.accessSync(this.path)
         }catch(err){
-            fs.writeFileSync(this.path, 'This is from news class')
+            fs.writeFileSync(this.path, '[]')
         }
        
             
