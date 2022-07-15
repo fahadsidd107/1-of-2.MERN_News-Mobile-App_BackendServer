@@ -18,7 +18,7 @@ class News {
   }
 
  async create(){
-(await fs.promises.readFile(this.path, "utf8"))
+JSON.parse(await fs.promises.readFile(this.path, "utf8"))
   }
 
 }
