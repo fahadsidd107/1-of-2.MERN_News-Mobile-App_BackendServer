@@ -16,6 +16,11 @@ class News {
       fs.writeFileSync(this.path, "[]");
     }
   }
+
+  cteate(){
+
+  }
+
 }
 
 export default News;
