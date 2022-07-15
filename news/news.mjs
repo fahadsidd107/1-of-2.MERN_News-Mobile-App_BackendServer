@@ -18,7 +18,7 @@ class News {
   }
 
   cteate(){
-await fs.promi
+await fs.promises.readFile(this.path, "utf8");
   }
 
 }
