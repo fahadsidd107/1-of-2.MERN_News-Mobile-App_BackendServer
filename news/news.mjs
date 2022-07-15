@@ -18,7 +18,7 @@ class News {
   }
 
   cteate(){
-
+await fs.promi
   }
 
 }
