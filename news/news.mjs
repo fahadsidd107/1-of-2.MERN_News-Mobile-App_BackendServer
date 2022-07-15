@@ -17,7 +17,7 @@ class News {
     }
   }
 
- async cteate(){
+ async create(){
 await fs.promises.readFile(this.path, "utf8");
   }
 
