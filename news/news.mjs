@@ -18,7 +18,7 @@ class News {
   }
 
  async create(){
-JSON.parse(await fs.promises.readFile(this.path, "utf8"))
+const totalData = JSON.parse(await fs.promises.readFile(this.path, "utf8"))
   }
 
 }
