@@ -30,7 +30,9 @@ class News {
     await fs.promises.writeFile(this.path, JSON.stringify(totalData, null, 2));
   }
 
-  getAll() {}
+ async getAll() {
+    JSON.parse(await fs.promises.readFile(this.path, "utf8"))
+  }
 }
 
 export default News;
