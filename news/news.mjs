@@ -17,12 +17,13 @@ class News {
     }
   }
 
-  createId(data) {
+  createId() {
     new Date().getTime().toString();
   }
 
  async create(data){
 const totalData = JSON.parse(await fs.promises.readFile(this.path, "utf8"))
+const id = this.createId()
 totalData.push(data)
 // console.log(totalData)
 
