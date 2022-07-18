@@ -29,6 +29,8 @@ class News {
 
     await fs.promises.writeFile(this.path, JSON.stringify(totalData, null, 2));
   }
+
+  getAll() {}
 }
 
 export default News;
