@@ -18,7 +18,7 @@ class News {
   }
 
   createId() {
-    new Date().getTime().toString();
+   return new Date().getTime().toString();
   }
 
   async create(data) {
