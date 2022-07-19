@@ -31,7 +31,7 @@ class News {
   }
 
  async getAll() {
-    JSON.parse(await fs.promises.readFile(this.path, "utf8"))
+   return JSON.parse(await fs.promises.readFile(this.path, "utf8"))
   }
 }
 
