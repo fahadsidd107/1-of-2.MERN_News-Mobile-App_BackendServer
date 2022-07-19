@@ -33,6 +33,8 @@ class News {
  async getAll() {
    return JSON.parse(await fs.promises.readFile(this.path, "utf8"))
   }
+
+  async getOne() {}
 }
 
 export default News;
