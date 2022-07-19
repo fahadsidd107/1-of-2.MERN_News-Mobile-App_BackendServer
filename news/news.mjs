@@ -22,7 +22,7 @@ class News {
   }
 
   async create(data) {
-    const totalData = this.getAll();
+    const totalData = await this.getAll();
     const id = this.createId();
     totalData.push({...data, id});
     // console.log(id);
