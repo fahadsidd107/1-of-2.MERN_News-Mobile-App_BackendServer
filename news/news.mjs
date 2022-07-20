@@ -36,6 +36,7 @@ class News {
 
   async getSingle(id) {
     const data = await this.getAll();
+    return data.find((news) => news.id === id);
   }
 }
 
