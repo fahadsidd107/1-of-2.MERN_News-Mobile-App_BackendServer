@@ -38,6 +38,8 @@ class News {
     const data = await this.getAll();
     return data.find((news) => news.id === id);
   }
+
+  async getByCategory(category) {}
 }
 
 export default News;
