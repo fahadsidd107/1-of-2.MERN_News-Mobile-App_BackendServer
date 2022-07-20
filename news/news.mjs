@@ -41,6 +41,7 @@ class News {
 
   async getByCategory(category) {
     const data = await this.getAll();
+    return data.find((news) => news.category === category);
   }
 }
 
