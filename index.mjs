@@ -8,6 +8,8 @@ app.use(express.static('public'))
 const news = new News()
 const data = news.getAll()
 console.log(data)
+
+const test = async () => {}
 // news.create({title:"test",content:"test",thumbnail:"test",category:"tech"})
 
 // app.get('/', (req, res) => {
