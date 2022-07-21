@@ -6,7 +6,7 @@ const PORT = 7777
 app.use(express.static('public'))
 
 const news = new News()
-news.create({title:"test",content:"test",thumbnail:"test",category:"test"})
+news.create({title:"test",content:"test",thumbnail:"test",category:"tech"})
 
 // app.get('/', (req, res) => {
 //     res.send(`<h1>Hello Server</h1>`)
