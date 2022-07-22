@@ -5,15 +5,22 @@ const PORT = 7777;
 
 app.use(express.static("public"));
 
-const news = new News();
-const data = news.getAll();
-console.log(data);
 
-const test = async () => {
-  const data = await news.getByCategory("tech");
-  console.log(data);
-};
-test();
+
+
+// const news = new News();
+// const data = news.getAll();
+// console.log(data);
+
+// const test = async () => {
+//   const data = await news.getByCategory("tech");
+//   console.log(data);
+// };
+// test();
+
+
+
+
 
 // news.create({title:"test",content:"test",thumbnail:"test",category:"tech"})
 
