@@ -10,7 +10,7 @@ const data = news.getAll()
 console.log(data)
 
 const test = async () => {
-    const data = await news.getAll()
+    const data = await news.getSingle(1658410440300)
     console.log(data)
 }
 test()
