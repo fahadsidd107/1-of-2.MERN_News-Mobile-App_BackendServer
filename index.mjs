@@ -10,9 +10,10 @@ const data = news.getAll()
 console.log(data)
 
 const test = async () => {
-    const data = news.getAll()
+    const data = await news.getAll()
     console.log(data)
 }
+test()
 
 // news.create({title:"test",content:"test",thumbnail:"test",category:"tech"})
 
