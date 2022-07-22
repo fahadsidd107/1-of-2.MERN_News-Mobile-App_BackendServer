@@ -10,7 +10,8 @@ const data = news.getAll()
 console.log(data)
 
 const test = async () => {
-
+    const data = news.getAll()
+    console.log(data)
 }
 
 // news.create({title:"test",content:"test",thumbnail:"test",category:"tech"})
