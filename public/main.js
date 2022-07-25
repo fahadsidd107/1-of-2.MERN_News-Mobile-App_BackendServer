@@ -39,7 +39,13 @@ form.addEventListener('submit', (e) => {
     if(valid) {
         fetch('http://localhost:7777/api/create',{
             method: 'POST',
+            body:{
+                title:'test',
+                content:'test', 
+            },
             
+
+
         })
     }
 })
