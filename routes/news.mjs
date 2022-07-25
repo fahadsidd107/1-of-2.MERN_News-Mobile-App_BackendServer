@@ -2,7 +2,7 @@ import express from "express";
 const router = express.Router()
 
 router.post('/create', (req, res) => {
-    res.send(`<h1>Hello Server</h1>`)
+    res.send('Hello Server')
 })
 
 module.exports = router;
