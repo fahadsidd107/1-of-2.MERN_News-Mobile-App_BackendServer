@@ -37,6 +37,6 @@ form.addEventListener('submit', (e) => {
     console.log('form is submit')
     const valid = validate()
     if(valid) {
-        fetch('http://localhost:7777/api/news')
+        fetch('http://localhost:7777/api/create')
     }
 })
