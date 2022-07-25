@@ -7,9 +7,6 @@ import newRouter from "./routes/news.mjs";
 app.use(express.static("public"));
 app.use("api", newRouter);
 
-
-
-
 // const news = new News();
 // const data = news.getAll();
 // console.log(data);
@@ -19,10 +16,6 @@ app.use("api", newRouter);
 //   console.log(data);
 // };
 // test();
-
-
-
-
 
 // news.create({title:"test",content:"test",thumbnail:"test",category:"tech"})
 
