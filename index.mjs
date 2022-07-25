@@ -5,6 +5,7 @@ const PORT = 7777;
 import newRouter from "./routes/news.mjs";
 
 app.use(express.static("public"));
+app.use( newRouter);
 
 
 
