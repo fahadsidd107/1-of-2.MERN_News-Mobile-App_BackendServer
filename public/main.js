@@ -41,7 +41,7 @@ form.addEventListener("submit", (e) => {
       method: "POST",
       body: {
         title: "",
-        content: "test",
+        content: "",
       },
       headers: {
 
