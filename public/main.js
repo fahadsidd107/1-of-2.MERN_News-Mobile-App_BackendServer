@@ -43,7 +43,9 @@ form.addEventListener("submit", (e) => {
         title: "test",
         content: "test",
       },
-      headers: {},
+      headers: {
+        
+      },
     });
   }
 });
