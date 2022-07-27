@@ -40,3 +40,5 @@ form.addEventListener("submit", (e) => {
  
   }
 });
+
+const postData = () => {}
