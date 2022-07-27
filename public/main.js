@@ -38,6 +38,7 @@ form.addEventListener("submit", (e) => {
   const valid = validate();
   if (valid) {
  const formData = new FormData(form);
+  postData();
   }
 });
 
