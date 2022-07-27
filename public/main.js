@@ -41,4 +41,6 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-const postData = (data) => {}
+const postData = (data) => {
+  fetch('http://localhost:7777/api/create', {})
+}
