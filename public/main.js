@@ -37,7 +37,7 @@ form.addEventListener("submit", (e) => {
   console.log("form is submit");
   const valid = validate();
   if (valid) {
- const formData = new FormData();
+ const formData = new FormData(form);
   }
 });
 
