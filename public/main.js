@@ -32,18 +32,18 @@ const validate = (e) => {
   }
 };
 
-form.addEventListener("submit", async(e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
   console.log("form is submit");
   const valid = validate();
   if (valid) {
     const formData = new FormData(form);
-   await postData(formData);
+    await postData(formData);
   }
 });
 
 const postData = async (data) => {
- await fetch("http://localhost:7777/api/create", {
+  await fetch("http://localhost:7777/api/create", {
     method: "POST",
     body: data,
   });
