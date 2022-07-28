@@ -32,13 +32,13 @@ const validate = (e) => {
   }
 };
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async(e) => {
   e.preventDefault();
   console.log("form is submit");
   const valid = validate();
   if (valid) {
     const formData = new FormData(form);
-    postData(formData);
+   await postData(formData);
   }
 });
 
