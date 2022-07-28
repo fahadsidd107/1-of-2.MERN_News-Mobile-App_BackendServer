@@ -37,13 +37,13 @@ form.addEventListener("submit", (e) => {
   console.log("form is submit");
   const valid = validate();
   if (valid) {
- const formData = new FormData(form);
-  postData(formData);
+    const formData = new FormData(form);
+    postData(formData);
   }
 });
 
 const postData = (data) => {
-  fetch('http://localhost:7777/api/create', {
-    method: 'POST',
-  })
-}
+  fetch("http://localhost:7777/api/create", {
+    method: "POST",
+  });
+};
