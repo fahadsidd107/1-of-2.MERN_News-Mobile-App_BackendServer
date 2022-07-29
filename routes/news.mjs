@@ -5,4 +5,4 @@ router.post("/create", (req, res) => {
   res.send("Hello Server");
 });
 
-module.exports = router;
+export default router;
