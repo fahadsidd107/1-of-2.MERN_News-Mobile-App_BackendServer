@@ -5,7 +5,7 @@ const PORT = 7777;
 import router from "./routes/news.mjs";
 
 app.use(express.static("public"));
-app.use("api", router);
+app.use("/api", router);
 
 // const news = new News();
 // const data = news.getAll();
