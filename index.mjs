@@ -2,10 +2,10 @@ import express from "express";
 import News from "./news/news.mjs";
 const app = express();
 const PORT = 7777;
-import newRouter from "./routes/news.mjs";
+import router from "./routes/news.mjs";
 
 app.use(express.static("public"));
-app.use("api", newRouter);
+app.use("api", router);
 
 // const news = new News();
 // const data = news.getAll();
