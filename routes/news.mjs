@@ -1,6 +1,7 @@
 import express from "express";
 const router = express.Router();
 const multer = require("multer");
+multer.memoryStorage()
 
 router.post("/create", (req, res) => {
   res.send("Hello Server");
