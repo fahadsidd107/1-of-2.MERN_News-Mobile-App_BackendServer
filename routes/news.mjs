@@ -4,7 +4,7 @@ const multer = require("multer");
 const storage = multer.memoryStorage()
 const uploads = multer({storage})
 
-router.post("/create",uploads.single(), (req, res) => {
+router.post("/create",uploads.single('thumbnail'), (req, res) => {
   res.send("Hello Server");
 });
 
