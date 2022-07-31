@@ -7,8 +7,6 @@ import router from "./routes/news.mjs";
 app.use(express.static("public"));
 app.use("/api", router);
 
-/
-
 app.listen(PORT, () => {
   console.log(`Your app is running at ${PORT}`);
 });
