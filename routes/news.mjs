@@ -5,8 +5,8 @@ const storage = multer.memoryStorage()
 const uploads = multer({storage})
 
 router.post("/create",uploads.single('thumbnail'), (req, res) => {
-  console.log(req.body);
-  
+  console.log('file',req.file);
+  console.log('body',req.body);
   res.send("Hello Server");
 });
 
