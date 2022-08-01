@@ -5,7 +5,6 @@ const storage = multer.memoryStorage();
 const uploads = multer({ storage });
 
 router.post("/create", uploads.single("thumbnail"), async (req, res) => {
-  const { title, content, category } = req.body;
  console.log(req.file);
   console.log( req.body);
   res.send("Hello Server");
