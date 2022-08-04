@@ -6,20 +6,15 @@ const storage = multer.memoryStorage();
 const fs = require("fs");
 const uploads = multer({ storage });
 const News = require("../news/news");
+const imageProcess = require("../util/imageProcess");
 
 router.post("/create", uploads.single("thumbnail"), async (req, res) => {
-  console.log(req.file);
-  console.log(req.body);
-  fs.access("./data/uploads", (err) => {
-    if (err) {
-      fs.mkdirSync("./data/uploads");
-    }
-  }
-  );
-  const id = new News().createId();
-  const formattedName = req.file.originalname.split(" ").join("-");
-  const filename = `${id}-${formattedName}`;
-  await sharp(req.file.buffer).resize({ width: 615, height: 350 }).toFile('./data/uploads' + filename);
+
+ const imageName=await imageProcess(req, req.body.id);
+  const news = new News()
+  const id = news.createId();
+
+  news.create(req.body, id,imageName);
   res.send("Hello Server");
 });
 
