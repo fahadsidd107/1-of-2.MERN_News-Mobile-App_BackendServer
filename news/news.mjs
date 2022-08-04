@@ -21,10 +21,10 @@ class News {
     return new Date().getTime().toString();
   }
 
-  async create(data) {
+  async create(data,id,imageName) {
     const totalData = await this.getAll();
-    const id = this.createId();
-    totalData.push({ ...data, id });
+   
+    totalData.push({ ...data, id, thumbnail:`https://localhost:7777/${imageName}` });
     // console.log(id);
 
     await fs.promises.writeFile(this.path, JSON.stringify(totalData, null, 2));
