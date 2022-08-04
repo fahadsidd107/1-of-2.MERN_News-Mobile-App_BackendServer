@@ -5,6 +5,7 @@ const PORT = 7777;
 import router from "./routes/news.js";
 
 app.use(express.static("public"));
+app.use(express.static("data/uploads"));
 app.use("/api", router);
 
 app.listen(PORT, () => {
